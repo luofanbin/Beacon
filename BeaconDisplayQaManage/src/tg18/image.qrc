@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/TG18-CHEST.2k.bmp</file>
+        <file>image/TG18-KNEE.2k.bmp</file>
+        <file>image/TG18-MAM01.2k.bmp</file>
+        <file>image/TG18-MAM02.2k.bmp</file>
+    </qresource>
+</RCC>

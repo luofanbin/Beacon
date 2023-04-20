@@ -1,0 +1,43 @@
+<RCC>
+    <qresource prefix="/system">
+        <file>Resources/ico.png</file>
+        <file>Resources/beacon.png</file>
+        <file>Resources/translation_ch.qm</file>
+        <file>Resources/translation_en.qm</file>
+        <file>Resources/qt_zh_CN.qm</file>
+        <file>Resources/images/fit-page-24.png</file>
+        <file>Resources/images/fit-page-32.png</file>
+        <file>Resources/images/fit-width-24.png</file>
+        <file>Resources/images/fit-width-32.png</file>
+        <file>Resources/images/go-first-24.png</file>
+        <file>Resources/images/go-first-32.png</file>
+        <file>Resources/images/go-last-24.png</file>
+        <file>Resources/images/go-last-32.png</file>
+        <file>Resources/images/go-next-24.png</file>
+        <file>Resources/images/go-next-32.png</file>
+        <file>Resources/images/go-previous-24.png</file>
+        <file>Resources/images/go-previous-32.png</file>
+        <file>Resources/images/layout-landscape-24.png</file>
+        <file>Resources/images/layout-landscape-32.png</file>
+        <file>Resources/images/layout-portrait-24.png</file>
+        <file>Resources/images/layout-portrait-32.png</file>
+        <file>Resources/images/page-setup-24.png</file>
+        <file>Resources/images/page-setup-32.png</file>
+        <file>Resources/images/print-24.png</file>
+        <file>Resources/images/print-32.png</file>
+        <file>Resources/images/status-color.png</file>
+        <file>Resources/images/status-gray-scale.png</file>
+        <file>Resources/images/view-page-multi-24.png</file>
+        <file>Resources/images/view-page-multi-32.png</file>
+        <file>Resources/images/view-page-one-24.png</file>
+        <file>Resources/images/view-page-one-32.png</file>
+        <file>Resources/images/view-page-sided-24.png</file>
+        <file>Resources/images/view-page-sided-32.png</file>
+        <file>Resources/images/zoom-in-24.png</file>
+        <file>Resources/images/zoom-in-32.png</file>
+        <file>Resources/images/zoom-out-24.png</file>
+        <file>Resources/images/zoom-out-32.png</file>
+        <file>Resources/images/save-32.png</file>
+        <file>Resources/images/save-24.png</file>
+    </qresource>
+</RCC>
