@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/timg.png</file>
+        <file>image/reboot.png</file>
+        <file>image/close.png</file>
+    </qresource>
+</RCC>
