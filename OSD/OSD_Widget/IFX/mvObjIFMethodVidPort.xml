@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<node name="/mv/mvapp/vidport">
+
+    <interface name="mv.mvapp.vidport.vout">	
+    	<method name="VoutPortGetOnoff">
+			<annotation name="org.qtproject.QtDBus.QtTypeName.In0" value="stOutSig_INFO"/>		
+			<arg name="portgid_id_Onoff" type="(ii)" direction="in" />
+			<annotation name="org.qtproject.QtDBus.QtTypeName.Out0" value="gtOutSig_INFO"/>		
+			<arg name="portgid_id_Onoff" type="(iii)" direction="out" />
+		</method>
+		<method name="VoutPortSetOnoff">
+			<annotation name="org.qtproject.QtDBus.QtTypeName.In0" value="PortStatus"/>		 				<arg name="portgid_id_Onoff" type="(yyyyyyyy)" direction="in" />	
+		</method>
+		<signal name="SignalVoutPortSetOnoff">
+			<annotation name="org.qtproject.QtDBus.QtTypeName.In0" value="PortStatus"/>		
+			<annotation name="org.qtproject.QtDBus.QtTypeName.Out0" value="PortStatus"/>		
+            		<arg name="signalportgid_id_Onoff" type="(yyyyyyyyyiis)"/>
+        	</signal>
+		<method name="VoutPortGetSdiType">
+        		<arg name="portgid_id" type="i" direction="in" />
+			<annotation name="org.qtproject.QtDBus.QtTypeName.Out0" value="stOutSig_INFO"/>	
+        		<arg name="portgid_id_SDIType" type="(ii)" direction="out" />
+      		</method>
+      		<method name="VoutPortSetSdiType">
+			<annotation name="org.qtproject.QtDBus.QtTypeName.In0" value="stOutSig_INFO"/>	
+        		<arg name="portgid_id_SDIType" type="(ii)" direction="in" />
+      		</method>
+      		<signal name="SignalVOutPortSetSdiType">
+			<annotation name="org.qtproject.QtDBus.QtTypeName.In0" value="stOutSig_INFO"/>	
+			<annotation name="org.qtproject.QtDBus.QtTypeName.Out0" value="stOutSig_INFO"/>	
+        		<arg name="signalportgid_id_SDIType" type="(ii)"/>
+      		</signal>
+		<method name="VoutPortGetType">	
+			<annotation name="org.qtproject.QtDBus.QtTypeName.In0" value="stOutSig_INFO"/>		 				<arg name="portgid_id" type="(ii)" direction="in" />	
+			<annotation name="org.qtproject.QtDBus.QtTypeName.Out0" value="gtOutSig_INFO"/>		
+			<arg name="portgid_id_type" type="(iii)" direction="out" />
+		</method>
+		<method name="VoutPortSetType">	
+			<annotation name="org.qtproject.QtDBus.QtTypeName.In0" value="gtOutSig_INFO"/>		 				<arg name="portgid_id_type" type="(iii)" direction="in" />	
+		</method>
+		<signal name="SignalVOutPortSetType">
+			<annotation name="org.qtproject.QtDBus.QtTypeName.In0" value="gtOutSig_INFO"/>		
+			<annotation name="org.qtproject.QtDBus.QtTypeName.Out0" value="gtOutSig_INFO"/>	
+            		<arg name="signalportgid_id_type" type="(iii)"/>
+        	</signal>						
+		<method name="VoutPortGetTimingPref">	
+			<annotation name="org.qtproject.QtDBus.QtTypeName.In0" value="stOutSig_INFO"/>		 				<arg name="portgid_id" type="(ii)" direction="in" />	
+			<annotation name="org.qtproject.QtDBus.QtTypeName.Out0" value="gtOutSig_INFO"/>	
+			<arg name="portgid_id_timingpref" type="(iii)" direction="out" />
+		</method>	
+		<method name="VoutPortSetTimingPref">
+			<annotation name="org.qtproject.QtDBus.QtTypeName.In0" value="gtOutSig_INFO"/>	 				<arg name="portgid_id_timingpref" type="(iii)" direction="in" />	
+		</method>		
+		<signal name="SignalVOutPortSetTimingPref">
+			<annotation name="org.qtproject.QtDBus.QtTypeName.In0" value="gtOutSig_INFO"/>		
+			<annotation name="org.qtproject.QtDBus.QtTypeName.Out0" value="gtOutSig_INFO"/>	
+            		<arg name="Signalportgid_id_timingpref" type="(iii)"/>
+        	</signal>			
+		<method name="VoutPortGetStatus">
+			<annotation name="org.qtproject.QtDBus.QtTypeName.In0" value="stOutSig_INFO"/>		 				<arg name="portgid_id" type="(ii)" direction="in" />	
+			<annotation name="org.qtproject.QtDBus.QtTypeName.Out0" value="gtOutSig_INFO"/>	
+			<arg name="portgid_id_status" type="(iii)" direction="out" />
+		</method>
+	
+	</interface>
+		
+</node>
+
+
+
+

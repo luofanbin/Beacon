@@ -1,0 +1,2372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Video_Adjustment</class>
+ <widget class="QWidget" name="Video_Adjustment">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>768</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>792</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Video Adjustment</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_12">
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <spacer name="horizontalSpacer_5">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QToolButton" name="toolButton">
+       <property name="minimumSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_17" stretch="1,1">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QGroupBox" name="Information_Group">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>130</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>Information</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="0">
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>86</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="Input_Label">
+            <property name="minimumSize">
+             <size>
+              <width>281</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Input:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>86</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLabel" name="Resolution_Label">
+            <property name="minimumSize">
+             <size>
+              <width>281</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Resolution:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLabel" name="VFrequency_Label">
+            <property name="minimumSize">
+             <size>
+              <width>281</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Vertical Frequency:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLabel" name="HFrequency_Label">
+            <property name="minimumSize">
+             <size>
+              <width>281</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Horizontal Frequency:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLabel" name="Pixel_Clock_label">
+            <property name="minimumSize">
+             <size>
+              <width>281</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Pixel Clock:</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,1">
+         <item>
+          <widget class="QGroupBox" name="Dither_Group">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>70</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>70</height>
+            </size>
+           </property>
+           <property name="title">
+            <string>Dither</string>
+           </property>
+           <widget class="QCheckBox" name="Dither_CheckBox">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>40</y>
+              <width>151</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="text">
+             <string>Enable Dithering</string>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>70</height>
+            </size>
+           </property>
+           <property name="title">
+            <string>DP Adjustments</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_11">
+            <item row="0" column="0">
+             <spacer name="horizontalSpacer_6">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>46</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="0" column="1">
+             <widget class="QPushButton" name="DP_Adjust_Button">
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="text">
+               <string>DP Adjustment</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <spacer name="horizontalSpacer_11">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>45</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_4">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>500</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>Adjustments</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <item>
+             <widget class="QLabel" name="label_26">
+              <property name="minimumSize">
+               <size>
+                <width>116</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>116</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Brightness:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="Brightness_Slider">
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="maximum">
+               <number>100</number>
+              </property>
+              <property name="singleStep">
+               <number>0</number>
+              </property>
+              <property name="pageStep">
+               <number>0</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="tickPosition">
+               <enum>QSlider::NoTicks</enum>
+              </property>
+              <property name="tickInterval">
+               <number>50</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="Brightness_spinBox">
+              <property name="minimumSize">
+               <size>
+                <width>70</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::StrongFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="maximum">
+               <number>100</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item>
+             <widget class="QLabel" name="label_27">
+              <property name="minimumSize">
+               <size>
+                <width>116</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>116</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Contrast:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="Contrast_Slider">
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="minimum">
+               <number>0</number>
+              </property>
+              <property name="maximum">
+               <number>100</number>
+              </property>
+              <property name="singleStep">
+               <number>0</number>
+              </property>
+              <property name="pageStep">
+               <number>0</number>
+              </property>
+              <property name="value">
+               <number>0</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="tickPosition">
+               <enum>QSlider::NoTicks</enum>
+              </property>
+              <property name="tickInterval">
+               <number>30</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="Contrast_spinBox">
+              <property name="minimumSize">
+               <size>
+                <width>70</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::StrongFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="minimum">
+               <number>0</number>
+              </property>
+              <property name="maximum">
+               <number>100</number>
+              </property>
+              <property name="value">
+               <number>0</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="2" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_6">
+            <item>
+             <widget class="QLabel" name="label_28">
+              <property name="minimumSize">
+               <size>
+                <width>116</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>116</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Color:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="Color_Slider">
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="minimum">
+               <number>0</number>
+              </property>
+              <property name="maximum">
+               <number>100</number>
+              </property>
+              <property name="singleStep">
+               <number>0</number>
+              </property>
+              <property name="pageStep">
+               <number>0</number>
+              </property>
+              <property name="value">
+               <number>0</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="tickPosition">
+               <enum>QSlider::NoTicks</enum>
+              </property>
+              <property name="tickInterval">
+               <number>30</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="Color_spinBox">
+              <property name="minimumSize">
+               <size>
+                <width>70</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::StrongFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="maximum">
+               <number>100</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="3" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_7">
+            <item>
+             <widget class="QLabel" name="label_29">
+              <property name="minimumSize">
+               <size>
+                <width>116</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>116</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Hue:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="Hue_Slider">
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="maximum">
+               <number>100</number>
+              </property>
+              <property name="singleStep">
+               <number>0</number>
+              </property>
+              <property name="pageStep">
+               <number>0</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="tickPosition">
+               <enum>QSlider::NoTicks</enum>
+              </property>
+              <property name="tickInterval">
+               <number>20</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="Hue_spinBox">
+              <property name="minimumSize">
+               <size>
+                <width>70</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::StrongFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="maximum">
+               <number>100</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="4" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_10">
+            <item>
+             <widget class="QLabel" name="label_30">
+              <property name="minimumSize">
+               <size>
+                <width>116</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>116</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Sharpness:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="Sharpness_Slider">
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="maximum">
+               <number>24</number>
+              </property>
+              <property name="singleStep">
+               <number>0</number>
+              </property>
+              <property name="pageStep">
+               <number>0</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="tickPosition">
+               <enum>QSlider::NoTicks</enum>
+              </property>
+              <property name="tickInterval">
+               <number>4</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="Sharpness_spinBox">
+              <property name="minimumSize">
+               <size>
+                <width>70</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::StrongFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="maximum">
+               <number>24</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="5" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_11">
+            <item>
+             <widget class="QLabel" name="label_31">
+              <property name="minimumSize">
+               <size>
+                <width>116</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>116</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Noise Reduction:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="Noise_Slider">
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="maximum">
+               <number>63</number>
+              </property>
+              <property name="singleStep">
+               <number>0</number>
+              </property>
+              <property name="pageStep">
+               <number>0</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="tickPosition">
+               <enum>QSlider::NoTicks</enum>
+              </property>
+              <property name="tickInterval">
+               <number>13</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="Noise_spinBox">
+              <property name="minimumSize">
+               <size>
+                <width>70</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::StrongFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="maximum">
+               <number>63</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="6" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_12">
+            <item>
+             <widget class="QLabel" name="label_32">
+              <property name="minimumSize">
+               <size>
+                <width>116</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>116</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Phase:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="Phase_Slider">
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="maximum">
+               <number>63</number>
+              </property>
+              <property name="singleStep">
+               <number>0</number>
+              </property>
+              <property name="pageStep">
+               <number>0</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="tickPosition">
+               <enum>QSlider::NoTicks</enum>
+              </property>
+              <property name="tickInterval">
+               <number>7</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="Phase_spinBox">
+              <property name="minimumSize">
+               <size>
+                <width>70</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::StrongFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="maximum">
+               <number>63</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="7" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_13">
+            <item>
+             <widget class="QLabel" name="label_33">
+              <property name="minimumSize">
+               <size>
+                <width>116</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>116</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Frequency:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="Frequency_Slider">
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="minimum">
+               <number>0</number>
+              </property>
+              <property name="maximum">
+               <number>0</number>
+              </property>
+              <property name="singleStep">
+               <number>0</number>
+              </property>
+              <property name="pageStep">
+               <number>0</number>
+              </property>
+              <property name="value">
+               <number>0</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="tickPosition">
+               <enum>QSlider::NoTicks</enum>
+              </property>
+              <property name="tickInterval">
+               <number>575</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="Frequency_spinBox">
+              <property name="minimumSize">
+               <size>
+                <width>70</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::StrongFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="minimum">
+               <number>0</number>
+              </property>
+              <property name="maximum">
+               <number>0</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="8" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_14">
+            <item>
+             <widget class="QLabel" name="label_34">
+              <property name="minimumSize">
+               <size>
+                <width>116</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>116</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Clampwidth:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="Clampwidth_Slider">
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="minimum">
+               <number>5</number>
+              </property>
+              <property name="maximum">
+               <number>100</number>
+              </property>
+              <property name="singleStep">
+               <number>0</number>
+              </property>
+              <property name="pageStep">
+               <number>0</number>
+              </property>
+              <property name="value">
+               <number>5</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="tickPosition">
+               <enum>QSlider::NoTicks</enum>
+              </property>
+              <property name="tickInterval">
+               <number>24</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QDoubleSpinBox" name="Clampwidth_doubleSpinBox">
+              <property name="minimumSize">
+               <size>
+                <width>70</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>53</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::StrongFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="minimum">
+               <double>0.500000000000000</double>
+              </property>
+              <property name="maximum">
+               <double>10.000000000000000</double>
+              </property>
+              <property name="singleStep">
+               <double>0.100000000000000</double>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="9" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_15">
+            <item>
+             <widget class="QLabel" name="label_45">
+              <property name="minimumSize">
+               <size>
+                <width>116</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>116</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>H-start:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="H_Start_Slider">
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="maximum">
+               <number>0</number>
+              </property>
+              <property name="singleStep">
+               <number>0</number>
+              </property>
+              <property name="pageStep">
+               <number>0</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="tickPosition">
+               <enum>QSlider::NoTicks</enum>
+              </property>
+              <property name="tickInterval">
+               <number>7</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="H_start_spinBox">
+              <property name="minimumSize">
+               <size>
+                <width>70</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::StrongFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="maximum">
+               <number>0</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="10" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_16">
+            <item>
+             <widget class="QLabel" name="label_46">
+              <property name="minimumSize">
+               <size>
+                <width>116</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>116</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>V-start:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="V_Start_Slider">
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="maximum">
+               <number>0</number>
+              </property>
+              <property name="singleStep">
+               <number>0</number>
+              </property>
+              <property name="pageStep">
+               <number>0</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="tickPosition">
+               <enum>QSlider::NoTicks</enum>
+              </property>
+              <property name="tickInterval">
+               <number>7</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="V_start_spinBox">
+              <property name="minimumSize">
+               <size>
+                <width>70</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::StrongFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="minimum">
+               <number>0</number>
+              </property>
+              <property name="maximum">
+               <number>0</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="11" column="0">
+           <widget class="QGroupBox" name="Bandwidth_Group">
+            <property name="title">
+             <string>Bandwidth Control</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_8">
+             <item row="0" column="0" colspan="2">
+              <layout class="QHBoxLayout" name="horizontalLayout_18">
+               <item>
+                <spacer name="horizontalSpacer_12">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>13</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QRadioButton" name="Bandwidth_Auto_RadioButton">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="focusPolicy">
+                  <enum>Qt::NoFocus</enum>
+                 </property>
+                 <property name="text">
+                  <string>Auto</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QRadioButton" name="Bandwidth_Manual_RadioButton">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="focusPolicy">
+                  <enum>Qt::NoFocus</enum>
+                 </property>
+                 <property name="text">
+                  <string>Manual</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="horizontalSpacer_13">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>13</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_35">
+               <property name="text">
+                <string>Value(MHZ):</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QSlider" name="Bandwidth_Slider">
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
+               <property name="maximum">
+                <number>15</number>
+               </property>
+               <property name="singleStep">
+                <number>0</number>
+               </property>
+               <property name="pageStep">
+                <number>0</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="tickPosition">
+                <enum>QSlider::NoTicks</enum>
+               </property>
+               <property name="tickInterval">
+                <number>43</number>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="2">
+              <widget class="QSpinBox" name="Bandwidth_spinBox">
+               <property name="minimumSize">
+                <size>
+                 <width>70</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>70</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="focusPolicy">
+                <enum>Qt::StrongFocus</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="maximum">
+                <number>15</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_2">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>70</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>Overlay modes(Analog timings)</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_6">
+          <item row="0" column="0">
+           <spacer name="horizontalSpacer_10">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>80</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="OverlayModesButton">
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="text">
+             <string>Overlay modes</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <spacer name="horizontalSpacer_7">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>81</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="3">
+           <widget class="QRadioButton" name="Automatic_radioButton">
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="text">
+             <string>Automatic</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="4">
+           <spacer name="horizontalSpacer_8">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>78</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QGroupBox" name="Color_Temperature_Group">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>218</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>218</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>Color Temperature</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_9">
+          <item row="1" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_8">
+            <item>
+             <widget class="QLabel" name="label_36">
+              <property name="maximumSize">
+               <size>
+                <width>160</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Temperature:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="ColorTemp_Slider">
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="minimum">
+               <number>0</number>
+              </property>
+              <property name="maximum">
+               <number>11</number>
+              </property>
+              <property name="singleStep">
+               <number>0</number>
+              </property>
+              <property name="pageStep">
+               <number>0</number>
+              </property>
+              <property name="value">
+               <number>0</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="ColorTemp_spinBox">
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="minimum">
+               <number>4000</number>
+              </property>
+              <property name="maximum">
+               <number>9500</number>
+              </property>
+              <property name="singleStep">
+               <number>500</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="2" column="0">
+           <widget class="QGroupBox" name="RGB_Group">
+            <property name="title">
+             <string>RGB%</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_10">
+             <item row="1" column="2">
+              <widget class="QSpinBox" name="Green_spinBox">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="focusPolicy">
+                <enum>Qt::StrongFocus</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="maximum">
+                <number>100</number>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="label_39">
+               <property name="text">
+                <string>Blue:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QSlider" name="Blue_Slider">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
+               <property name="minimum">
+                <number>0</number>
+               </property>
+               <property name="maximum">
+                <number>100</number>
+               </property>
+               <property name="pageStep">
+                <number>1</number>
+               </property>
+               <property name="value">
+                <number>0</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="tickPosition">
+                <enum>QSlider::NoTicks</enum>
+               </property>
+               <property name="tickInterval">
+                <number>20</number>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_38">
+               <property name="text">
+                <string>Green:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="2">
+              <widget class="QSpinBox" name="Blue_spinBox">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="focusPolicy">
+                <enum>Qt::WheelFocus</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="maximum">
+                <number>100</number>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_37">
+               <property name="text">
+                <string>Red:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QSlider" name="Red_Slider">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
+               <property name="minimum">
+                <number>0</number>
+               </property>
+               <property name="maximum">
+                <number>100</number>
+               </property>
+               <property name="singleStep">
+                <number>0</number>
+               </property>
+               <property name="pageStep">
+                <number>0</number>
+               </property>
+               <property name="value">
+                <number>0</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="tickPosition">
+                <enum>QSlider::NoTicks</enum>
+               </property>
+               <property name="tickInterval">
+                <number>20</number>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QSpinBox" name="Red_spinBox">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="focusPolicy">
+                <enum>Qt::StrongFocus</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="maximum">
+                <number>100</number>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QSlider" name="Green_Slider">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
+               <property name="minimum">
+                <number>0</number>
+               </property>
+               <property name="maximum">
+                <number>100</number>
+               </property>
+               <property name="singleStep">
+                <number>0</number>
+               </property>
+               <property name="pageStep">
+                <number>0</number>
+               </property>
+               <property name="value">
+                <number>0</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="tickPosition">
+                <enum>QSlider::NoTicks</enum>
+               </property>
+               <property name="tickInterval">
+                <number>20</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_23">
+            <item>
+             <widget class="QRadioButton" name="Color_Native_RadioButton">
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="text">
+               <string>Native</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="Color_RGB_RadioButton">
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="text">
+               <string>RGB Adjust</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="Color_Temp_RadioButton">
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="text">
+               <string>Temp.Adjust</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="Display_Function_Group">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>Display Function</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_7">
+          <item row="0" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_19">
+            <item>
+             <widget class="QRadioButton" name="Display_Native_RadioButton">
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="text">
+               <string>Native</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="Display_DICOM_RadioButton">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="text">
+               <string>DICOM</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="Display_Gamma_RadioButton">
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="text">
+               <string>Convert Gamma to Dicom</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_20">
+            <item>
+             <widget class="QLabel" name="label_40">
+              <property name="maximumSize">
+               <size>
+                <width>56</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Gamma:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="Gamma_comboBox">
+              <property name="minimumSize">
+               <size>
+                <width>150</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <item>
+               <property name="text">
+                <string>1.5</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>1.55</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>1.6</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>1.65</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>1.7</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>1.75</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>1.8</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>1.85</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>1.9</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>1.95</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2.0</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2.05</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2.1</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2.15</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2.2</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2.25</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2.3</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2.35</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2.4</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2.45</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2.5</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2.55</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2.6</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2.65</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2.7</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_9">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="Scaling_Group">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>150</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>150</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>Scaling</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_22">
+            <item>
+             <widget class="QRadioButton" name="Scaling_Native_RadioButton">
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="text">
+               <string>Native</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="Scaling_Best_Fit_RadioButton">
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="text">
+               <string>Best Fit</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="Scaling_Full_RadioButton">
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="text">
+               <string>Full Screen</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="Scaling_Adjust_RadioButton">
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="text">
+               <string>Adjustable</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="Scaling_FourToThree_RadioButton">
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="text">
+             <string>4:3(available for comp/s-video/sdi /VGA)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_28">
+            <item>
+             <widget class="QLabel" name="label_41">
+              <property name="text">
+               <string>Zoom %:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="Zoom_Slider">
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="minimum">
+               <number>50</number>
+              </property>
+              <property name="maximum">
+               <number>200</number>
+              </property>
+              <property name="singleStep">
+               <number>0</number>
+              </property>
+              <property name="pageStep">
+               <number>0</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="Zoom_spinBox">
+              <property name="focusPolicy">
+               <enum>Qt::StrongFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="minimum">
+               <number>50</number>
+              </property>
+              <property name="maximum">
+               <number>200</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="3" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_9">
+            <item>
+             <widget class="QLabel" name="label_42">
+              <property name="minimumSize">
+               <size>
+                <width>65</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>H_Scaling:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="H_Scaling_Slider">
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="minimum">
+               <number>800</number>
+              </property>
+              <property name="maximum">
+               <number>2000</number>
+              </property>
+              <property name="singleStep">
+               <number>0</number>
+              </property>
+              <property name="pageStep">
+               <number>0</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QDoubleSpinBox" name="H_Scaling_doubleSpinBox">
+              <property name="focusPolicy">
+               <enum>Qt::StrongFocus</enum>
+              </property>
+              <property name="decimals">
+               <number>3</number>
+              </property>
+              <property name="minimum">
+               <double>0.800000000000000</double>
+              </property>
+              <property name="maximum">
+               <double>2.000000000000000</double>
+              </property>
+              <property name="singleStep">
+               <double>0.001000000000000</double>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="Auto_Setup_Group">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="title">
+          <string>Auto Setup</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="0" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_21">
+            <item>
+             <widget class="QPushButton" name="Auto_Button_1">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>25</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>25</height>
+               </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Full</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="Auto_Button_2">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>25</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>25</height>
+               </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Phase</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="Auto_Button_3">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>25</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>25</height>
+               </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Gain Offset</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="Auto_Button_4">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>25</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>25</height>
+               </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Geometry</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="labelSetAuto">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_6">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>150</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>150</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>Settings Restore</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_5">
+          <item row="0" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <spacer name="horizontalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_3">
+              <item>
+               <widget class="QPushButton" name="Restore_Curr_Preset_Button">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>180</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="focusPolicy">
+                 <enum>Qt::NoFocus</enum>
+                </property>
+                <property name="text">
+                 <string>Restore Current Preset</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="Next_Preset_Button">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>180</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="focusPolicy">
+                 <enum>Qt::NoFocus</enum>
+                </property>
+                <property name="text">
+                 <string>Next Preset</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="Save_Preset_Button">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>180</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="focusPolicy">
+                 <enum>Qt::NoFocus</enum>
+                </property>
+                <property name="text">
+                 <string>Save Preset</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="Restore_Default_Preset_Button">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>180</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="focusPolicy">
+                 <enum>Qt::NoFocus</enum>
+                </property>
+                <property name="text">
+                 <string>Restore Default Preset</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_4">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

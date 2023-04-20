@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<node name="/mv/mvapp/osd">
+  <interface name="mv.mvapp.osd.server">
+    <method name="DISPOSD_GetDispOnOff">
+                <arg type="i" name="input_array" direction="in" />
+                <arg type="i" name="output_array" direction="out" />
+                <arg type="i" name="result" direction="out" />
+    </method>
+    <method name="DISPOSD_SetDispOnOff">
+                <arg type="i" name="input_array" direction="in" />
+                <arg type="i" name="output_array" direction="out" />
+                <arg type="i" name="result" direction="out" /> 
+    </method>
+    <method name="DISPOSD_GetDispSpan">
+                <arg type="i" name="input_array" direction="in" />
+                <arg type="i" name="output_array" direction="out" />
+                <arg type="i" name="result" direction="out" /> 
+    </method>
+    <method name="DISPOSD_SetDispSpan">
+                <arg type="i" name="input_array" direction="in" />
+                <arg type="i" name="output_array" direction="out" />
+                <arg type="i" name="result" direction="out" /> 
+    </method>
+    <method name="DISPOSD_SetMsg">
+                <arg type="i" name="input_array" direction="in" />
+                <arg type="i" name="output_array" direction="out" />
+                <arg type="i" name="result" direction="out" /> 
+    </method>
+  </interface>
+</node>

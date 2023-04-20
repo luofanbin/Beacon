@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<node name="/mv/mvapp/disp">	
+	<interface name="mv.mvapp.disp.osd">		
+		<method name="GetOnOff">	
+			<arg name="fpgaid" type="y" direction="in" />	
+			<annotation name="org.qtproject.QtDBus.QtTypeName.Out0" value="stOsdOnOff_Info"/>	
+			<arg name="osd_onoff" type="(yy)" direction="out" />
+		</method>		
+		<method name="SetOnOff">
+			<annotation name="org.qtproject.QtDBus.QtTypeName.In0" value="stOsdOnOff_Info"/>			
+			<arg name="osd_onoff" type="(yy)" direction="in" />	
+		</method>	
+		<signal name='SigSetOnOff'>
+			<annotation name="org.qtproject.QtDBus.QtTypeName.In0" value="stOsdOnOff_Info"/>
+			<annotation name="org.qtproject.QtDBus.QtTypeName.Out0" value="stOsdOnOff_Info"/>
+			<arg name='osd_onoff' type='(yy)' />
+		</signal>
+
+    		<method name="GetSmallOsdOnOff">
+	  		<arg name="fpgaid" type="y" direction="in" />
+			<annotation name="org.qtproject.QtDBus.QtTypeName.Out0" value="stOsdOnOff_Info"/>
+      			<arg name="smallosd_onoff" type="(yy)" direction="out" />
+    		</method>
+    		<method name="SetSmallOsdOnOff">
+			<annotation name="org.qtproject.QtDBus.QtTypeName.In0" value="stOsdOnOff_Info"/>
+      			<arg name="smallosd_onoff" type="(yy)" direction="in" />
+    		</method>
+    		<signal name='SigSetSmallOsdOnOff'>
+			<annotation name="org.qtproject.QtDBus.QtTypeName.In0" value="stOsdOnOff_Info"/>
+			<annotation name="org.qtproject.QtDBus.QtTypeName.Out0" value="stOsdOnOff_Info"/>
+      			<arg name='smallosd_onoff' type='(yy)' />
+    		</signal>
+
+    		<method name="GetScanListOnOff">
+	  		<arg name="fpgaid" type="y" direction="in" />
+			<annotation name="org.qtproject.QtDBus.QtTypeName.Out0" value="stOsdOnOff_Info"/>
+      			<arg name="scanlist_onoff" type="(yy)" direction="out" />
+    		</method>
+    		<method name="SetScanListOnOff">
+			<annotation name="org.qtproject.QtDBus.QtTypeName.In0" value="stOsdOnOff_Info"/>
+      			<arg name="scanlist_onoff" type="(yy)" direction="in" />
+    		</method>
+    		<signal name='SigSetScanListOnOff'>
+			<annotation name="org.qtproject.QtDBus.QtTypeName.In0" value="stOsdOnOff_Info"/>
+			<annotation name="org.qtproject.QtDBus.QtTypeName.Out0" value="stOsdOnOff_Info"/>
+      			<arg name='scanlist_onoff' type='(yy)' />
+    		</signal>
+		
+		<method name="GetSpan">			
+			<arg name="span_val" type="y" direction="out" />
+		</method>		
+		<method name="SetSpan">			
+			<arg name="span_val" type="y" direction="in" />	
+		</method>	
+		<signal name='SigSetSpan'>
+			<arg name='span_val' type='y' />
+		</signal>
+		
+		<method name="GetColorKey">  
+			<annotation name="org.qtproject.QtDBus.QtTypeName.Out0" value="stColorKey"/>     				      				<arg name="colorkey_val" type="(yyy)" direction="out" />
+		</method>		
+		<method name="SetColorKey">	
+			<annotation name="org.qtproject.QtDBus.QtTypeName.In0" value="stColorKey"/>   		
+			<arg name="colorkey_val" type="(yyy)" direction="in" />	
+		</method>	
+		<signal name='SigSetColorKey'>
+			<annotation name="org.qtproject.QtDBus.QtTypeName.In0" value="stColorKey"/>  
+			<annotation name="org.qtproject.QtDBus.QtTypeName.Out0" value="stColorKey"/>     		
+			<arg name='colorkey_val' type='(yyy)' />
+		</signal>
+		
+		<method name="GetAlpha">			
+			<arg name="alpha_val" type="y" direction="out" />
+		</method>		
+		<method name="SetAlpha">			
+			<arg name="alpha_val" type="y" direction="in" />	
+		</method>	
+		<signal name='SigSetAlpha'>
+			<arg name='alpha_val' type='y' />
+		</signal>
+		 <method name="GetRemoteMouseOnOff">
+      			<arg name="remotemouseonoff_val" type="y" direction="out" />
+    		</method>
+    		<method name="SetRemoteMouseOnOff">
+      			<arg name="remotemouseonoff_val" type="y" direction="in" />
+    		</method>
+    		<signal name='SigSetRemoteMouseOnOff'>
+      			<arg name='remotemouseonoff_val' type='y' />
+    		</signal>
+	</interface>
+	
+	<interface name="mv.mvapp.disp.router">		
+		<method name="GetRouter">		
+			<arg name="vidout_id" type="y" direction="in" />
+			<annotation name="org.qtproject.QtDBus.QtTypeName.Out0" value="stRouter"/>    	
+			<arg name="route_id_val" type="(yy)" direction="out" />
+		</method>		
+		<method name="SetRouter">	
+			<annotation name="org.qtproject.QtDBus.QtTypeName.In0" value="stRouter_In"/>    		
+			<arg name="route_id_val" type="(yyii)" direction="in" />	
+		</method>	
+		<signal name='SigSetRouter'>
+			<annotation name="org.qtproject.QtDBus.QtTypeName.In0" value="stRouter_Out"/>    		
+			<annotation name="org.qtproject.QtDBus.QtTypeName.Out0" value="stRouter_Out"/>    	
+			<arg name='route_id_val' type='(yyyii)' />
+		</signal>
+		<method name="SwtNextInput">	
+			<annotation name="org.qtproject.QtDBus.QtTypeName.In0" value="SwitchNextSigIn"/>   		
+			<arg name="route_id" type="(yii)" direction="in" />	
+			<annotation name="org.qtproject.QtDBus.QtTypeName.Out0" value="stSwtNextInput_INFO"/>   
+			<arg name="route_id_vin_stat" type="(yyy)" direction="out" />
+		</method>	
+		<signal name='SigSwtNextInput'>
+			<annotation name="org.qtproject.QtDBus.QtTypeName.In0" value="SwitchNextSigOut"/>    		
+			<annotation name="org.qtproject.QtDBus.QtTypeName.Out0" value="SwitchNextSigOut"/>   
+			<arg name='route_id_val' type='(yyyii)' />
+		</signal>
+		<method name="GetSwtOutput">
+			<arg name="output_val" type="y" direction="out" />
+		</method>
+		<method name="SetSwtOutput"/>	
+		<signal name='SigSetSwtOutput'>	
+			<arg name="output_val" type="y" />
+		</signal>
+
+		<signal name='SigSetRouteNotice'>
+			<arg name="output_val" type="y" />
+		</signal>
+
+		<method name="GetInterlaceVideo">		
+			<arg name="id_val" type="i" direction="out" />
+		</method>		
+		<method name="SetInterlaceVideo">			
+			<arg name="id_val" type="i" direction="in" />	
+		</method>	
+		<signal name='SigSetInterlaceVideo'>
+			<arg name='id_val' type='i' />
+		</signal>		
+	</interface>
+
+	<interface name="mv.mvapp.disp.grbi">	
+		<method name="GetGrabIndcatorSel">		
+			<arg name="span_val" type="y" direction="out" />
+		</method>		
+		<method name="SetGrabIndcatorSel">			
+			<arg name="span_val" type="y" direction="in" />	
+		</method>	
+		<signal name='SigSetGrabIndcatorSel'>
+			<arg name='span_val' type='y' />
+		</signal>
+	
+		<method name="GetFrozSpan">		
+			<arg name="span_val" type="y" direction="out" />
+		</method>		
+		<method name="SetFrozSpan">
+			<annotation name="org.qtproject.QtDBus.QtTypeName.In0" value="stFans_INFO"/> 			
+			<arg name="span_val" type="(yy)" direction="in" />	
+		</method>	
+		<signal name='SigSetFrozSpan'>
+			<annotation name="org.qtproject.QtDBus.QtTypeName.In0" value="stFans_INFO"/> 
+			<annotation name="org.qtproject.QtDBus.QtTypeName.Out0" value="stFans_INFO"/> 
+			<arg name='span_val' type='(yy)' />
+		</signal>	
+
+		<method name="StartFrozen" />		
+		<method name="StopFrozen" />
+
+		<method name="SetNewPatient" />	
+		<signal name='SigSetNewPatient' />
+		
+		<method name="GetPatientInfo" />	
+
+		<method name="AskWorkList">
+			<arg name="src_id" type="y" direction="in" />	
+			<annotation name="org.qtproject.QtDBus.QtTypeName.Out0" value="stGrabImage_INFO"/> 
+			<arg name="src_id_Work_List_Stat" type="(yyy)" direction="out" />
+		</method>
+		<signal name="SigAskWorkList">
+			<annotation name="org.qtproject.QtDBus.QtTypeName.In0" value="stGrabImage_INFO"/> 
+			<annotation name="org.qtproject.QtDBus.QtTypeName.Out0" value="stGrabImage_INFO"/> 
+			<arg name="src_id_Work_List_Stat" type="(yyy)" direction="out" />
+		</signal>
+		
+		<method name="GetWorkList">
+			<arg name="src_id" type="y" direction="in" />
+			<annotation name="org.qtproject.QtDBus.QtTypeName.Out0" value="Work_List_Val"/>    	
+			<arg name="Work_List_Val" type="a(y)" direction="out" />
+		</method>
+
+		<method name="GrabImgActive" >
+					<arg name="active_val" type="y" direction="in" />	
+					<arg name="ret_val" type="y" direction="out" />	
+		</method>
+		<method name="NoSendImgNum" >
+					<arg name="src_id" type="y" direction="in" />
+					<annotation name="org.qtproject.QtDBus.QtTypeName.Out0" value="stGrabImage_INFO"/> 
+					<arg name="src_id_ret_val" type="(yyy)" direction="out" />	
+		</method>
+		<method name="ImgFreeMemSiz" >
+					<arg name="src_id" type="y" direction="in" />
+					<annotation name="org.qtproject.QtDBus.QtTypeName.Out0" value="stGrabImage_INFO"/> 
+					<arg name="src_id_ret_val" type="(yyy)" direction="out" />	
+		</method>		
+		<method name="SingleGrabStart" >
+				<annotation name="org.qtproject.QtDBus.QtTypeName.In0" value="stSingleGrabStart_In"/> 
+				<arg name="ret_cnt" type="(yii)" direction="in" />
+				<annotation name="org.qtproject.QtDBus.QtTypeName.Out0" value="stGrabImage_INFO"/>    	
+				<arg name="ret_cnt" type="(yyy)" direction="out" />	
+		</method>
+		<signal name="SigSingleGrabStart">
+				<annotation name="org.qtproject.QtDBus.QtTypeName.In0" value="stGrabImageStaus_INFO"/> 	
+				<annotation name="org.qtproject.QtDBus.QtTypeName.Out0" value="stGrabImageStaus_INFO"/> 
+					<arg name="ret_cnt" type="(yyyii)" />	
+		</signal>
+		
+		<method name="SingleGrabStored" >
+				<arg name="src_id" type="y" direction="in" />
+				<annotation name="org.qtproject.QtDBus.QtTypeName.Out0" value="stGrabImage_INFO"/>    	
+				<arg name="ret_cnt" type="(yyy)" direction="out" />	
+		</method>
+		<signal name='SigSingleGrabStored'>
+				<annotation name="org.qtproject.QtDBus.QtTypeName.In0" value="stGrabImage_INFO"/> 	
+				<annotation name="org.qtproject.QtDBus.QtTypeName.Out0" value="stGrabImage_INFO"/> 
+					<arg name="ret_cnt" type="(yyy)" direction="out" />	
+		</signal>	
+		<method name="DeleteImage" >	
+					<arg name="src_id" type="y" direction="in" />
+					<annotation name="org.qtproject.QtDBus.QtTypeName.Out0" value="stGrabImage_INFO"/> 
+					<arg name="src_id_ret" type="(yyy)" direction="out" />	
+		</method>		
+		<method name="GetDicomStorSvr">	
+			<annotation name="org.qtproject.QtDBus.QtTypeName.Out0" value="stDEVCOMM_SVR"/>    	
+			<arg name="Store_Svr_Val" type="(siss)" direction="out" />
+		</method>
+		<method name="SetDicomStorSvr">
+			<annotation name="org.qtproject.QtDBus.QtTypeName.In0" value="stDEVCOMM_SVR"/>    	
+			<arg name="Store_Svr_Val" type="(siss)" direction="in" />
+		</method>		
+		<signal name='SigSetDicomStorSvr'>
+			<annotation name="org.qtproject.QtDBus.QtTypeName.In0" value="stDEVCOMM_SVR"/>  
+			<annotation name="org.qtproject.QtDBus.QtTypeName.Out0" value="stDEVCOMM_SVR"/>    	  	
+			<arg name="Store_Svr_Val" type="(siss)" />
+		</signal>	
+		
+		<method name="GetDicomRisSvr">
+			<annotation name="org.qtproject.QtDBus.QtTypeName.Out0" value="stDEVCOMM_SVR"/>    	
+			<arg name="Ris_Svr_Val" type="(siss)" direction="out" />
+		</method>		
+		<method name="SetDicomRisSvr">
+			<annotation name="org.qtproject.QtDBus.QtTypeName.In0" value="stDEVCOMM_SVR"/>    	
+			<arg name="Ris_Svr_Val" type="(siss)" direction="in" />
+		</method>	
+		<signal name='SigSetDicomRisSvr'>
+			<annotation name="org.qtproject.QtDBus.QtTypeName.In0" value="stDEVCOMM_SVR"/>    	
+			<annotation name="org.qtproject.QtDBus.QtTypeName.Out0" value="stDEVCOMM_SVR"/>    	
+			<arg name="Ris_Svr_Val" type="(siss)" />
+		</signal>
+		
+	</interface>	
+	
+</node>
+
