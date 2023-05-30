@@ -1,0 +1,29 @@
+<RCC>
+    <qresource prefix="/">
+        <file>右翻页-01-01.png</file>
+        <file>左翻页-01.png</file>
+        <file>右翻页-浅-01.png</file>
+        <file>右翻页-深-01.png</file>
+        <file>左翻页-浅-01.png</file>
+        <file>左翻页-深-01.png</file>
+        <file>右翻页-01-02.png</file>
+        <file>左翻页-01_2.png</file>
+        <file>通信状态_2_3.png</file>
+        <file>通信状态_2_4.png</file>
+        <file>LOGO.png</file>
+        <file>LOGO_1.png</file>
+        <file>image/bgnew.png</file>
+        <file>image/bgnew3.png</file>
+        <file>image/biconbg2.png</file>
+        <file>image/bottombg3.png</file>
+        <file>image/footer_logo2.png</file>
+        <file>image/style1.jpg</file>
+        <file>image/通信1.png</file>
+        <file>image/通信2.png</file>
+        <file>image/LOGO.png</file>
+        <file>image/LOGO1.png</file>
+        <file>image/LOGO3 .png</file>
+        <file>image/LOGO4.png</file>
+        <file>image/style.jpg</file>
+    </qresource>
+</RCC>
